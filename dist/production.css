@@ -1,0 +1,1027 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+:root {
+/*Colours*/
+ /*--body-background: #000000;  /*Not in use*/
+/*Header*/
+--header-background: #000000; /*Header Background*/
+--header-colour-tabs: #FFFFFF;
+--header-colour-highlight: #d76e25;
+/*Hero*/
+ /*--hero-background: #000000; /*Not in use*/
+ /*--hero-colour: #000000; /*Not in use*/
+--hero-colour-button: #FFFFFF;
+--hero-background-button: #000000;
+/*About*/
+--about-background: #FFFFFF;
+--about-colour-section: #21150D;
+--about-colour-body : #21150D;
+--about-colour-heading: #d76e25;
+ /*--about-colour-highlight: #000000; /*Not in use*/
+/*Opening*/
+ /*--opening-background: #00000; /*Not in use*/
+ /*--opening-background-individual: #000000; /*Not in use*/
+--opening-colour: #FFFFFF;
+--opening-colour-days: #d76e25;
+ /*--opening-colour-highlight: #000000; /*Not in use*/
+/*Menu*/
+--menu-background: #382315;
+--menu-colour-heading: #d76e25;
+--menu-colour-item: #d76e25;
+--menu-colour-description: #FFFFFF;
+--menu-colour-from: #FFFFFF;
+--menu-colour-price: #d76e25;
+--menu-colour-button: #d76e25;	
+/*Gallery*/
+--gallery-background: #E7DBD1;
+--gallery-colour-section: #21150D;
+/*Reservation*/
+--reservation-background: #FFFFFF;
+--reservation-colour-heading: #d76e25;
+--reservation-colour-labels: #21150D;
+--reservation-background-fields: #FFFFFF;
+--reservation-colour-fields: #21150D;
+--reservation-colour-button: #d76e25;	
+/*Testimonials*/
+ /*--testimonials-background: #000000; /*Not in use*/
+--testimonials-background-individual: #E7DBD1;
+--testimonials-colour-body: #21150D;
+--testimonials-colour-author: #d76e25;
+--testimonials-colour-quotation: #d76e25;
+/*Contact*/
+--contact-background: #E7DBD1;
+--contact-colour-heading: #21150D;
+--contact-background-fields: #ede4dd;
+--contact-colour-fields: #21150D;
+--contact-colour-button: #d76e25;	
+/*Footer*/
+--footer-background: #382315;
+--footer-colour: #FFFFFF;
+
+
+/*fonts*/
+--heading-font: alda; /*Headings, Subtitiles, Days of week, About section titles, menu item headers*/
+--main-font: gill-sans-nova; /*Body font*/
+--secondary-font: 'Vollkorn';
+}
+
+
+
+
+/*Contact Page*/
+h2.section-title, .section-subtitle, .container section.reservations h3.contact-details, section.reservations p {
+    color: var(--about-colour-section) !important;
+}
+/* layout */
+@media (max-width: 991px) {
+    #contact .col-md-6,
+    #contact .col-md-12 {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+}
+
+
+/*GENERAL CHANGES*/
+p.text, body, input, textarea, .section-subtitle {
+    font-family: var(--main-font) !important;
+	font-weight: 500 !important;
+	font-style: normal !important;
+}
+.overlay {
+    opacity: .0!important;
+}
+#menu,
+#timetable,
+html .section {
+    margin-bottom: 0;
+    padding-top: 100px!important;
+    padding-bottom: 100px!important;    
+} 
+
+#contact {
+    padding-bottom: 0!important;  
+}
+#reservations {
+    padding-top: 0!important;
+    padding-bottom: 0!important;       
+}
+
+@media (max-width: 991px) {
+    #menu, #timetable, html .section {
+        margin-bottom: 0;
+        padding-top: 60px!important;
+        padding-bottom: 60px!important;            
+    }
+
+}
+html .section .jt_row {
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    html .jt_col {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    html .jt_col {
+        margin-bottom: 0;
+    }
+}
+
+
+/*HIDE / RESET */
+
+#home-slider .mouse,
+#home-slider .slide-sep,
+#timetable h2.section-title:before,
+#timetable h2.section-title:after,
+.timetable-decorator,
+.timetable-decorator2,
+#reservations > div.container > div:first-child > div:first-child,
+#reservations .menu-logo,
+#testimonials > .container > div:first-child > div:nth-child(2),
+#testimonials .owl-controls,    
+#gallery .voffset200,
+.reservationDivider,
+#contact .section-subtitle {
+    display: none!important;
+}
+#about,
+#aboutSection,
+#timetable,
+#menu,
+#gallery,
+#reservations,
+#testimonials,
+#contact {
+    height: unset!important;
+    min-height: unset!important;
+}
+
+
+
+/*HEADER***/
+/*Logo Styling*/
+.logo_elixir {
+    height: 70px !important;
+}
+.navbar-brand {
+    top: 10px !important;
+}
+#header .navbar-brand {
+    padding:  0 !important;
+}
+/*Header Background Colour*/
+#header {
+	background: var(--header-background) !important;
+}
+/*Heading Colour*/
+#header .menu-item a {
+    color: var(--header-colour-tabs) !important;
+}
+/*Header Active and hover link*/
+#header .nav .menu-item.current a, #header .nav .menu-item a:hover {
+    color: var(--header-colour-highlight) !important;
+}
+
+
+
+
+
+
+.container > h1,
+#about h1,
+h1.section-title {
+    margin: 100px 0 60px!important;
+    font-size: 48px!important;
+    line-height: 64px!important;
+    font-weight: 400!important;
+    text-transform: capitalize!important;
+}
+.container > h1,
+#about h1,
+h1.section-title,
+h2.section-title {
+    font-family: var(--secondary-font), serif !important;
+	font-weight: 400 !important;
+	font-style: italic !important;
+    text-transform: capitalize!important;
+}
+
+#header .menu-item a {
+	font-family: var(--heading-font) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+html #about h1 {
+    margin-bottom: 0!important;
+}
+html #about h1::before,
+html #about h1::after {
+    transform: translate(0, -35px) !important;
+}
+
+html .container > h1 {
+    margin-top: 160px!important;    
+}
+html .container > h1::before,
+html .container > h1::after {
+    transform: translate(0, -15px) !important;
+}
+
+@media (max-width: 767px) {
+    html #about h1 {
+        margin-top: 0!important;
+    }
+    html .container > h1 {
+        margin-top: 100px!important;
+    }
+}
+
+@media (max-width: 568px) {
+    html #about h1 {
+        margin-top: 80px!important;
+    }    
+
+    html .container > h1 {
+        margin-top: 160px!important;
+    }    
+
+    html #about h1::before,
+    html #about h1::after,
+    html .container > h1::before,
+    html .container > h1::after {
+        display: none!important;
+    }        
+}    
+
+
+
+@media (max-width: 480px) {
+    html #about h1,
+    html .container > h1 {
+        font-size: 36px!important;
+        line-height: 48px!important;
+    }
+
+
+}    
+
+h2.section-title, 
+h2.section-title, 
+#gallery h2, 
+#gallery h2, 
+#testimonials .container h2, 
+#testimonials .container h2 {
+    font-style: italic;
+}
+
+.container > h1:before, 
+.jt_col > h1:before, 
+.container > h1:after, 
+.jt_col > h1:after,
+h2.section-title:before, 
+h2.section-title:after, 
+#gallery h2:before, 
+#gallery h2:after, 
+#testimonials .container h2:before, 
+#testimonials .container h2:after {
+    content: " " !important;
+    width: 70px !important;
+    border-bottom: 1px solid !important;
+    display: inline-block !important;
+    transform: translate(0, -20px) !important;
+    margin: 0 14px !important;
+    letter-spacing: .05em;
+}
+
+@media (max-width: 480px) {
+    .container > h1:before, 
+    .jt_col > h1:before, 
+    .container > h1:after, 
+    .jt_col > h1:after,
+    h2.section-title:before, 
+    h2.section-title:after, 
+    #gallery h2:before, 
+    #gallery h2:after, 
+    #testimonials .container h2:before, 
+    #testimonials .container h2:after {
+        width: 20px !important; 
+    }       
+}
+
+
+/*MAIN SLIDER*/
+
+/*Remove address*/
+.restAddresses {
+	display: none !important;
+}
+/*Order Online*/
+h1.order-online-h2 {
+    font-family: var(--secondary-font) !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+}
+
+/* Sale badge */
+
+html section#home-slider #discount-badge .discount
+html section#home-slider #discount-badge {
+    background: url(https://www.flipdish.com/elixir/img/pizzacafe/sale_badge.svg) no-repeat;
+    background-size: contain;
+    border-radius:0;
+    padding: 10px;
+} 
+
+
+/*ABOUT SECTION***/
+/*Remove Ornament*/
+.ornament {
+	display:none !important;
+}
+/*Background Colour*/
+#aboutSection.about {
+	background: var(--about-background) !important;
+}
+
+/*Text*/
+#aboutSection p.text {
+        color: var(--about-colour-body) !important;
+}
+
+/*Headings*/
+#about .container h2.heading, #aboutSection .container h2.heading {
+	font-family: var(--heading-font) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+        color: var(--about-colour-heading) !important;
+}
+
+#aboutSection h2.section-title:before, 
+#aboutSection h2.section-title:after,.container > h1:before, 
+.jt_col > h1:before, 
+.container > h1:after, 
+.jt_col > h1:after,
+h2.section-title:before, 
+h2.section-title:after {
+	border-color: var(--about-colour-section) !important;
+}
+
+@media (max-width: 991px) {
+    #aboutSection .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutSection .row:nth-child(even) .col-md-6:last-child {
+        order: 1;
+    }    
+    #aboutSection .row:nth-child(even) .col-md-6:first-child {
+        order: 2;
+    }
+    #aboutSection h3 {
+        margin-bottom: 16px!important;
+    }          
+}
+
+
+/* Discount badge ***/
+
+html section#home-slider #discount-badge .discount {
+    font-size: 44px;
+    line-height: 50px;
+    color: #fff;
+    padding-top: 15px;
+    font-weight: 700;
+    box-shadow: none;
+    border-radius: 0;    
+}
+html section#home-slider #discount-badge {
+    transform: rotate(15deg) translate(-20px, -30px) scale(1,1) !important;
+    background: url(https://www.flipdish.com/elixir/img/pizzacafe/sale_badge.svg) no-repeat;
+    background-size: contain;
+    border-radius:0;
+    padding: 10px;
+    box-shadow: none;
+}
+html section#home-slider #discount-badge::hover {
+    transform: rotate(20deg) translate(-20px, -30px) scale(1.1,1.1) !important;
+}    
+
+html .section#home-slider #discount-badge .title {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@media only screen and (max-width: 568px) {
+    html section#home-slider #discount-badge {
+        transform: rotate(15deg) translate(-10px, -20px) scale(1,1) !important;
+    }        
+    html section#home-slider #discount-badge {
+        width: 130px;
+        height: 130px;
+        margin-left: 40px;
+    }
+}     
+
+/* CTA ***/
+
+#owl-main-text a {
+    display: inline-block!important;
+    text-align: center !important;
+    color: var(--hero-colour-button) !important;
+    text-shadow: none;
+    font-size: 24px !important;
+    padding: 24px;
+    margin: 24px 0 0!important;
+    max-width: 100%;
+    width: auto;
+    min-width: 360px;
+    border: 2px solid var(--hero-colour-button) ;
+    text-decoration: none!important;
+    background: var(--hero-background-button);        
+}
+#owl-main-text a h1 {
+    display:inline-block;
+    color: var(--hero-colour-button) !important;
+    text-shadow: none;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding: 0;
+    position: relative;
+    margin: 0 !important;
+}
+
+@media only screen and (max-width: 480px) {
+    #owl-main-text a {
+        font-size: 18px !important;
+        padding: 16px;
+        margin: 8px 0 0!important;
+        max-width: 100%;
+        min-width:auto;        
+    }
+    #owl-main-text a h1 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }		
+}
+html .my-app-logo {
+    width: 56px;
+    height: 56px;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    html .my-app-logos {
+        margin-top: 10px;
+    }
+}
+
+
+
+/*OPENING HOURS***/
+/*Days*/
+#timetable .section-subtitle.days {
+	font-family: var(--heading-font) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+	color: var(--opening-colour-days) !important;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+#timetable  .hours {
+    font-size: 24px;
+    line-height: 36px;    
+    margin-top: 0;
+}
+/*Store name*/
+#timetable  .hours, #timetable  h2 {
+	color: var(--opening-colour) !important;
+}
+/*Times*/
+#timetable  .hours, #timetable  h2 {
+	color: var(--opening-colour) !important;
+}
+
+#timetable .divider-long {
+    margin-top: 125px !important;
+    padding-top: 150px !important;
+}
+
+#timetable .jt_row {
+    padding-bottom: 70px;
+}
+@media (max-width: 991px) {
+    #timetable .jt_row {
+        padding-bottom: 30px;
+    }
+
+    #timetable h2 {
+        line-height: inherit;
+    }    
+
+}
+
+
+/*MENU SECTION***/
+
+.section.menu {
+    min-height: none;
+}
+
+/*Remove Logo*/
+#menu img.center.menu-logo {
+	display: none;
+}
+/*Reduce spacing*/
+section.menu .voffset100 {
+	display:none !important;
+}
+/*Heading Font and Menu item name font*/
+section.menu h3, section.menu ul li {
+	font-family: var(--heading-font) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+/*Colour for Heading Font*/
+section.menu .container h3 {
+    font-style: none !important;
+    color: var(--menu-colour-heading) !important;
+}
+/*Menu item name font*/
+section.menu ul li {
+    font-style: none !important;
+    color: var(--menu-colour-item) !important;
+}
+/*Menu item Price*/
+section.menu span {
+    font-style: none !important;
+    color: var(--menu-colour-price) !important;
+}
+section.menu span {
+    font-family: var(--main-font) !important;
+	font-weight: 500 !important;
+	font-style: normal !important;
+}
+/*Colour for Menu item description*/
+section.menu ul li .detail, section#menu .price i {
+	color: var(--menu-colour-description) !important;
+}
+/*Colour for FROM before price*/
+section.menu ul li .detail, section#menu .price i {
+	color: var(--menu-colour-from) !important;
+}
+/*Font for Menu item description*/
+section.menu ul li .detail {
+    font-family: var(--main-font) !important;
+}
+/*Order online button*/
+section#menu a.button.menu, section#menu .button.menu {
+    color: var(--menu-colour-button) !important;
+    border: 2px solid var(--menu-colour-button) !important;
+	background: transparent !important;
+}
+section#menu a.button.menu:hover, section#menu .button.menu:hover {
+    background: var(--menu-colour-button) !important;
+    color: var(--menu-background) !important;
+}
+/*Background Colour*/
+section#menu {
+	background-color: var(--menu-background) !important;
+    min-height: none;
+}
+#menu a.button.menu, #menu .button.menu {
+    font-family: var(--primary-font) !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+}
+@media (max-width: 991px) {
+    #menu .button.menu:before, 
+    #menu .button.menu:after {
+        display: none !important;
+    }
+}
+
+
+/*GALLERY***/
+/*Background colour*/
+.section.dark.gallery {
+    background: var(--gallery-background) !important;
+} 
+/*Section title*/
+section#gallery .section-title {
+    color: var(--gallery-colour-section) !important;
+}
+section#gallery h2.section-title:before, 
+section#gallery h2.section-title:after {
+    content: url(../Areas/AutoSites/elixircontent/elixirfull/images/header_decorator_dark_gray.png);
+}
+section#gallery .jt_row {
+    padding-bottom: 0;
+}
+#gallery h2:before, 
+#gallery h2:after {
+    content: " " !important;
+    width: 70px !important;
+    border-bottom: 1px solid var(--gallery-colour-section) !important;
+    display: inline-block !important;
+    transform: translate(0, -20px) !important;
+    margin: 0 14px !important;
+    letter-spacing: .05em;
+}
+
+
+/*RERERVATIONS FORM*/
+/*textfield input*/
+#reservations.reservations input, 
+#reservations.reservations textarea {
+    color: var(--reservation-colour-fields) !important;
+}
+#reservations.reservations input {
+    background: none;
+	height: 60px!important;
+}
+
+/*Submit button*/
+#reservations.reservations input#reservations_submit {
+    font-family: var(--primary-font) !important;
+    color: var(--reservation-colour-button) !important;
+    border: 2px solid var(--reservation-colour-button) !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+	background: transparent !important;
+}
+#reservations input#reservations_submit.button.center:hover {
+    background: var(--reservation-colour-button) !important;
+    color: var(--reservation-background) !important;
+}
+/*Reservation form Headings*/
+section.reservations .contact-form p, section.reservations .container h3 {
+    color: var(--reservation-colour-heading) !important;
+}
+/*Reservation form labels*/
+#reservations label {
+    color: var(--reservation-colour-labels) !important;
+}
+
+section.reservations p {
+    font-family: var(--main-font) !important;
+	font-weight: 500 !important;
+	font-style: normal !important;
+}
+section.reservations h3, 
+section.reservations .contact-form p, 
+section.reservations h3.contact-details {
+	font-family: var(--heading-font) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+/*Background*/
+#reservations.reservations {
+	background: var(--reservation-background) !important;
+}
+/*Fields background*/
+#reservations input, #reservations textarea {
+	background: var(--reservation-background-fields) !important;
+}
+
+
+
+
+/*Divider*/
+section.reservations div.reservationDivider {
+	display: none!important;
+}
+
+/* layout */
+
+@media (max-width: 991px) {
+    #reservations .col-md-5,
+    #reservations .col-md-10 {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+}
+
+/*TESTIMONIALS*/
+
+/*Background*/
+section.testimonials {
+    background-size: cover;
+}
+
+/*Author*/
+section.testimonials .container h2, section.testimonials .container .item span.author {
+	font-family: var(--heading-font) !important;
+    color: var(--testimonials-colour-author) !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
+  
+}
+/*Testimonial text*/
+section.testimonials .item p {
+    font-family: var(--main-font) !important;
+	font-weight: 500 !important;
+	font-style: normal !important;
+	color: var(--testimonials-colour-body) !important;
+}
+
+html #testimonials.section {
+    overflow: hidden!important;
+    margin: 0px!important;
+    padding: 80px 0;
+}
+#testimonials .row,
+#testimonials .col-md-12 {
+    margin: 0;
+    padding: 0;
+}
+#testimonials .owl-wrapper-outer {
+    width: 100%!important;
+}
+#testimonials .owl-wrapper {
+    width: 100%!important;
+}
+#testimonials,
+#testimonials > .container,
+#testimonials .owl-carousel,
+#testimonials .owl-wrapper,
+#testimonials .owl-wrapper-outer {
+    overflow: visible!important;
+}
+#testimonials .item p {
+    font-size: 24px!important;
+    line-height: 32px!important;
+    margin: 0;
+    color: var(--testimonials-colour-body) !important;    
+}
+#testimonials .owl-wrapper {
+    width: 100%!important;
+}
+#testimonials .owl-item {
+    position: relative;
+    width: 67%!important;
+    float: left;
+    padding: 36px!important;
+    margin-bottom: 36px!important;
+    background: var(--testimonials-background-individual);
+}
+#testimonials .owl-item:nth-child(odd) {
+    margin-right: 33%!important;
+}
+#testimonials .owl-item:nth-child(even) {
+    margin-left: 33%!important;
+}     
+#testimonials .owl-item:last-child {
+    margin-bottom: 0!important;
+}  
+#testimonials .owl-item::before,
+#testimonials .owl-item::after {
+    position: absolute;
+    content: " ";
+    display: block;
+}
+#testimonials .owl-item::before {
+    top: 0;
+    right: -29px;
+    border-width: 12px 15px 12px 15px;
+    border-style: solid;
+    width: 30px;
+    height: 24px;
+    border-color: var(--testimonials-background-individual) transparent transparent var(--testimonials-background-individual);
+    
+}
+#testimonials .owl-item:nth-child(even):before {
+    border-color: var(--testimonials-background-individual) var(--testimonials-background-individual) transparent transparent ;
+    right: unset;
+    left: -29px;
+}
+
+#testimonials .owl-item::after {
+    content: "”";
+    line-height: 0;
+    bottom: 0;
+    font-size: 160px;
+    right: -90px;
+    text-align: right;
+    color: var(--testimonials-colour-quotation);
+
+}
+#testimonials .owl-item:nth-child(even):after {
+    right: unset;
+    text-align: left;
+    left: -90px;
+}
+#testimonials .owl-wrapper-outer .author,
+#testimonials .owl-wrapper-outer i {
+    margin: 8px 0 0!important;
+    padding: 0!important;
+    font-size: 18px!important;
+    line-height: 24px!important;
+    font-style: italic!important;
+    display: block!important;
+}
+#testimonials .owl-wrapper-outer .author::before,
+#testimonials .owl-wrapper-outer i::before {
+    content: "- "!important;
+}
+
+@media (max-width: 767px) {
+
+    #testimonials .owl-item {
+        width: calc(100% - 90px)!important;
+    }
+    #testimonials .owl-item:nth-child(odd) {
+        margin-right: 90px!important;
+    }
+    #testimonials .owl-item:nth-child(even) {
+        margin-left: 90px!important;
+    }      
+}
+@media (max-width: 1199px) {
+    #testimonials .item p {
+        font-size: 18px!important;
+        line-height: 24px!important;
+        margin: 0;    
+    }  
+    #testimonials .owl-wrapper-outer .author, #testimonials .owl-wrapper-outer i {
+        margin: 6px 0 0!important;
+        font-size: 14px!important;
+        line-height: 20px!important;
+    }          
+}
+
+@media (max-width: 480px) {
+
+    #testimonials .owl-item {
+        width: calc(100% - 48px)!important;
+        padding: 16px!important
+    }
+    #testimonials .owl-item:nth-child(odd) {
+        margin-right: 48px!important;
+    }
+    #testimonials .owl-item:nth-child(even) {
+        margin-left: 48px!important;
+    }            
+
+    #testimonials .owl-item::before {
+        right: -19px;
+        border-width: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    #testimonials .owl-item:nth-child(even):before {
+        left: -19px;
+    }
+    
+    #testimonials .owl-item::after {
+        right: -48px;
+        width: 36px;
+        height: 24px;
+        font-size: 80px;
+    }
+    #testimonials .owl-item:nth-child(even):after {
+        left: -48px;
+    }
+
+} 
+
+
+
+
+/*CONTACT FORM*/
+
+/*Section title*/
+section#contact .section-title {
+    margin-bottom: 40px;
+    
+}
+section#contact h2.section-title:before, 
+section#contact h2.section-title:after {
+    content: url(../Areas/AutoSites/elixircontent/elixirfull/images/header_decorator_dark_gray.png);
+}
+
+/*input boxes*/
+
+.section#contact input[type="text"], 
+.section#contact input[type="email"]  {
+	height: 60px;
+}
+.section#contact input[type="text"], 
+.section#contact input[type="email"], 
+.section#contact textarea {
+	background: var(--contact-background-fields) !important;
+}
+.section#contact input[type="text"], 
+.section#contact input[type="email"], 
+.section#contact textarea,
+.section#contact input[type="text"]::placeholder, 
+.section#contact input[type="email"]::placeholder,
+.section#contact textarea::placeholder  {
+    font-family: var(--main-font) !important;
+    color: var(--contact-colour-fields) !important;
+}
+
+section#contact textarea {
+    min-height: 372px !important;
+}
+/*submit button*/
+.section#contact input#contact_submit.button.center{
+    font-family: var(--primary-font) !important;
+    color: var(--contact-colour-button) !important;
+    border: 2px solid var(--contact-colour-button) !important;
+	font-weight: 400 !important;
+	font-style: normal !important;
+}
+#contact input#contact_submit.button.center:hover{
+	background: var(--contact-colour-button) !important;
+    color: var(--contact-background) !important;
+}
+/*Background Colour*/
+section#contact {
+    background: var(--contact-background) !important;
+}
+/*Heading colour*/
+section#contact h2.section-title {
+    color: var(--contact-colour-heading) !important;
+}
+
+
+
+
+
+/*FOOTER*/
+#footer {
+    background: var(--footer-background) !important;
+}
+.footerlink a {
+	color: var(--footer-colour) !important;
+}
+
+
+/*ABOUT PAGE*/
+/*Background Colour*/
+#about.about {
+	background: var(--about-background) !important;
+}
+/*Text*/
+#about p.text {
+        color: var(--about-colour-body) !important;
+}
+/*Headings*/
+#about .container h2.heading {
+        color: var(--about-colour-heading) !important;
+}
+@media (max-width: 991px) {
+    #about .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about .row:nth-child(even) .col-md-6:last-child {
+        order: 1;
+    }    
+    #about .row:nth-child(even) .col-md-6:first-child {
+        order: 2;
+    }
+    #about h3 {
+        margin-bottom: 16px!important;
+    }
+    #about p.text {
+        margin-bottom: 0!important;
+    }         
+}  
+
+/*CONMTACT PAGE*/
+
+.reservation-phone a {
+    display: inline-block;
+    font-family: var(--main-font);
+    font-size: 14px !important;
+    line-height: 18px !important;
+    padding: 13px 24px !important;
+    border: 1px solid var(--about-colour-heading) !important;
+    color: var(--about-colour-heading) !important;
+}
+
+#reservations .reservation-phone {
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 30px;
+}
+#reservations .voffset70 {
+    margin-top: 40px;
+}
+
+.container #reservation .section-subtitle a {
+    color: var(--about-colour-heading) !important;
+}
