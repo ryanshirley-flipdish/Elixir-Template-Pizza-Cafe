@@ -3,6 +3,8 @@
 
 
 :root {
+/*Font-Size*/
+--new-font-size: "17px";
 /*Colours*/
  /*--body-background: #000000;  /*Not in use*/
 /*Header*/
@@ -86,6 +88,9 @@ h2.section-title, .section-subtitle, .container section.reservations h3.contact-
 
 
 /*GENERAL CHANGES*/
+#aboutSection p.text{
+ font-size: var(--new-font-size) !important;
+ }
 p.text, body, input, textarea, .section-subtitle {
     font-family: var(--main-font) !important;
 	font-weight: 500 !important;
