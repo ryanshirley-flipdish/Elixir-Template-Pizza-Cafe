@@ -3,8 +3,10 @@
 
 
 :root {
+/*Header Logo-Size*/
+--header-logo-size: 150px;
 /*Font-Size*/
---new-font-size: "17px";
+--about-body-font-size: 17px;
 /*Colours*/
  /*--body-background: #000000;  /*Not in use*/
 /*Header*/
@@ -88,8 +90,11 @@ h2.section-title, .section-subtitle, .container section.reservations h3.contact-
 
 
 /*GENERAL CHANGES*/
+.logointro{
+height: var(--header-logo-size) !important;
+ }
 #aboutSection p.text{
- font-size: var(--new-font-size) !important;
+ font-size: var(--about-body-font-size) !important;
  }
 p.text, body, input, textarea, .section-subtitle {
     font-family: var(--main-font) !important;
