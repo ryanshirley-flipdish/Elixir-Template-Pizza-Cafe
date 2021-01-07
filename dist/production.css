@@ -9,6 +9,7 @@
 --header-logo-size: 150px;
 /*Font-Size*/
 --about-body-font-size: 17px;
+--about-button-font-size: 26px;
 /*Colours*/
  /*--body-background: #000000;  /*Not in use*/
 /*Header*/
@@ -25,7 +26,7 @@
 --about-colour-section: #21150D;
 --about-colour-body : #21150D;
 --about-colour-heading: #d76e25;
- /*--about-colour-highlight: #000000; /*Not in use*/
+--about-colour-highlight: #000000; /*Order Button if present*/
 /*Opening*/
  /*--opening-background: #00000; /*Not in use*/
  /*--opening-background-individual: #000000; /*Not in use*/
@@ -357,6 +358,21 @@ html section#home-slider #discount-badge {
 
 
 /*ABOUT SECTION***/
+/*Order Button*/
+#aboutSection .orderButton {
+    border: 1px var(--about-colour-highlight) solid;
+    background-color: var(--about-colour-highlight) !important;
+    color: var(--about-background) !important;
+    padding: 3px 10px;
+    font-size: var(--about-button-font-size) !important;
+    margin-bottom: 20px
+}
+
+#aboutSection .orderButton:hover {
+    border: 1px var(--about-colour-highlight) solid;
+    background-color: var(--about-background) !important;
+    color: var(--about-colour-highlight) !important;
+}
 /*Remove Ornament*/
 .ornament {
 	display:none !important;
